@@ -1,0 +1,43 @@
+
+
+body {
+    background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+}
+
+.container{
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+}
+.digitalClock{
+    /* border: 1px black solid; */
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.153);
+    border-radius: 10px;
+    color: #fffbfb;
+}
+.digitalClock h1{
+    display: inline-block ; /* places the content in a horizontal row */
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem; /*each rem is equivalent to 16px */
+}
+@media(max-width:768px){
+    #bar1,#bar2{
+        display: none; 
+    }
+    .digitalClock h1{
+        display: block;  /* places the content in a column way */
+    }
+
+}
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
